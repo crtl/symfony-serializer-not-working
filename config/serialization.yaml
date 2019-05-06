@@ -1,0 +1,6 @@
+App\Entity\Person:
+    ignored_attributes:
+        - id
+    attributes:
+        - firstName
+        - lastName
