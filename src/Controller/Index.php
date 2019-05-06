@@ -14,9 +14,11 @@ class Index extends AbstractController
 
     public function index(SerializerInterface $serializer) {
 
-        $person = new Person("Marvin", "Petker", 18);
+        $person = new Person("Jhon", "Doe", 123);
 
+        echo "<pre>\n";
         echo $serializer->serialize($person, "json");
+        echo "</pre>";
         die();
     }
 
